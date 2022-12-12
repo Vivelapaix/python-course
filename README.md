@@ -1,3 +1,5 @@
+
+
 # python-course
 
 ## Задание 1
@@ -8,9 +10,8 @@
 Программа должна быть покрыта тестами.
 
 ### Пример 1
-
-Вход:
-
+<details><summary>Вход</summary><blockquote>
+    
 solution.py
 
 ```
@@ -27,8 +28,10 @@ out.md
 ````
 
 ````
-    
-Выход:
+</blockquote></details>
+
+
+<details><summary>Выход</summary><blockquote>
 
 out.md
 
@@ -45,11 +48,11 @@ def print_hello():
 ```
 
 ````
-
+</blockquote></details>
 
 ### Пример 2
 
-Вход:
+<details><summary>Вход</summary><blockquote>
 
 solution.py
 
@@ -76,10 +79,10 @@ out.md
 def print_hello():
     print('Hello!')
 ```
-
 ````
+</blockquote></details>
     
-Выход:
+<details><summary>Выход</summary><blockquote>
 
 out.md
 
@@ -104,9 +107,8 @@ def print_hello():
 def print_greeting():
     print('Greeting!')
 ```
-
 ````
-
+</blockquote></details>
 
 ## Задание 2
 
@@ -122,7 +124,8 @@ def print_greeting():
 
 
 ### Пример
-Вход: 
+
+<details><summary>Вход</summary><blockquote>
 
 input.csv
 
@@ -132,8 +135,9 @@ id,name,birth,salary,department
 2,Alex,1960,200000,5
 3,Ivan,,130000,8
 ```
+</blockquote></details>
 
-Выход:
+<details><summary>Выход</summary><blockquote>
 
 output.json
 
@@ -162,7 +166,7 @@ output.json
  }
 ]
 ```
-
+</blockquote></details>
 
 ## Задание 3
 

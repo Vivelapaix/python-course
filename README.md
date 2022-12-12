@@ -395,3 +395,122 @@ output.json
 }
 ```
 </blockquote></details>
+
+
+## Задание 6
+
+### Описание
+
+Реализовать класс для комплексных чисел ComplexNumber. Основные операции: сложение, вычитание, умножение, модуль числа. Покрыть тестами.
+ 
+### Пример
+
+```python
+first = ComplexNumber(1, 2)
+second = ComplexNumber(2, 3)
+third = first + second
+print(third) # 3 + 5i
+
+d = {}
+d[first] = 0
+d[second] = 1
+d[third] = d[first] + d[second]
+print(d[third]) # 1
+```
+
+## Задание 7
+
+### Описание
+Реализовать конвертер трейдерских сделок
+
+### Пример
+
+<details><summary>Вход</summary><blockquote>
+
+input.txt    
+    
+```
+BANK: 1000
+
+APE-FTT
+
+Покупка
+
+Вход: 20.11
+
+Таргет: 21.5; 22.8; 23.5
+
+Выход: 19.0
+
+--------------------------
+BANK: 50
+
+CTY-QWE
+
+Покупка
+
+Вход: 3.01
+
+Таргет: 3.105; 3.270; 3.400
+
+Выход: 2.8
+-------------------
+```
+</blockquote></details>
+
+
+
+<details><summary>Выход</summary><blockquote>
+
+output.txt    
+    
+````
+
+BANK: 1000
+START_PRICE: 20.11
+STOP_PRICE: 19.0; 1000 - 19.0 * 49.72 = ???
+PAIR: APE-FTT
+
+1 target: 21.5 FTT
+Percent: 6.911%
+Bank: 1069.11 FTT
+Target size: 16.57 * 21.5 = 356.255 FTT
+
+2 target: 22.8 FTT
+Percent: 13.376%
+Bank: 1133.76 FTT
+Target size: 16.57 * 22.8 = 377.796 FTT
+
+3 target: 23.5 FTT
+Percent: 16.85%
+Bank: 1168.5 FTT
+Target size: 16.57 * 23.5 = 389.395 FTT
+
+Strategy income: sum() - 1000 = ???; percent: ???
+
+----------------------------------------------
+BANK: 50
+START_PRICE: 3.01
+STOP_PRICE: 19.0; 1000 - 19.0 * 49.72 = ???
+PAIR: CTY-QWE
+
+1 target: 21.5 FTT
+Percent: 6.911%
+Bank: 1069.11 FTT
+Target size: 16.57 * 21.5 = 356.255 FTT
+
+2 target: 22.8 FTT
+Percent: 13.376%
+Bank: 1133.76 FTT
+Target size: 16.57 * 22.8 = 377.796 FTT
+
+3 target: 23.5 FTT
+Percent: 16.85%
+Bank: 1168.5 FTT
+Target size: 16.57 * 23.5 = 389.395 FTT
+
+Strategy income: sum() - 1000 = ???; percent: ???
+````
+</blockquote></details>
+
+

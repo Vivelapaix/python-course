@@ -423,6 +423,44 @@ print(d[third]) # 1
 ### Описание
 Реализовать конвертер трейдерских сделок
 
+<details><summary>Шаблон кода</summary><blockquote>
+
+```python
+class StrategyDeal:
+    def __init__(self, bank, entry, targets, close):
+        pass
+        
+    def get_targets(self):
+        pass 
+
+    def get_target_percents(self):
+        pass
+
+    def get_target_banks(self):
+        pass
+
+    def __str__(self):
+        pass
+
+
+def read_data(file_name):
+    pass
+
+
+def write_data(file_name, data):
+    pass
+
+def main():
+    content = read_data('deals.txt')
+    result = content
+    write_data('out.txt', result)
+   
+if __name__ == '__main__':    
+    main()  
+```
+
+</blockquote></details>
+
 ### Пример
 
 <details><summary>Вход</summary><blockquote>
